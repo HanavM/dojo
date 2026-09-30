@@ -1,0 +1,130 @@
+{
+  "test1_discrimination": {
+    "rows": [
+      {
+        "profile": "never_restores",
+        "trial": 1,
+        "diagnosis": "The learner overuses Analyse and Remove actions, neglecting Restore, which is the only action that clears privileged access and mitigates significant penalties.",
+        "world": "red=meander; steps=30; revalued: User1(Low/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "never_restores",
+        "trial": 2,
+        "diagnosis": "The learner relies excessively on Analyse and Remove, neglecting the need to use Restore to clear privileged access on critical hosts.",
+        "world": "red=meander; steps=30; revalued: Op_Host0(Medium/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "never_restores",
+        "trial": 3,
+        "diagnosis": "The learner overuses Analyse and Remove actions, failing to address privileged access on Enterprise1 and ignoring Op_Server0 entirely.",
+        "world": "red=meander; steps=30; revalued: Op_Server0(High/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "restore_spam",
+        "trial": 1,
+        "diagnosis": "The learner overuses Restore, even when it is unnecessary, as seen from 28 Restore actions in the last round despite only two hosts being compromised.",
+        "world": "red=meander; steps=30; revalued: User0(Low/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "restore_spam",
+        "trial": 2,
+        "diagnosis": "The learner overuses Restore indiscriminately, wasting turns on unnecessary actions, as seen with 28 Restore actions in a 30-step game.",
+        "world": "red=meander; steps=30; revalued: User0(Low/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "restore_spam",
+        "trial": 3,
+        "diagnosis": "The learner overuses Restore, even on hosts where it is unnecessary, leading to wasted turns and suboptimal performance.",
+        "world": "red=meander; steps=30; revalued: User1(Low/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "passive",
+        "trial": 1,
+        "diagnosis": "The learner overuses Monitor and Analyse actions, which are free but ineffective for mitigating threats, as shown by its failure to address privileged access on Enterprise1.",
+        "world": "red=meander; steps=30; revalued: Enterprise1(High/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "passive",
+        "trial": 2,
+        "diagnosis": "The agent overuses Monitor and Analyse, failing to take corrective actions like Restore to mitigate privileged access on critical hosts.",
+        "world": "red=meander; steps=30; revalued: Op_Host0(Low/-)",
+        "verdict": "correct"
+      },
+      {
+        "profile": "passive",
+        "trial": 3,
+        "diagnosis": "The learner heavily overuses Monitor and Analyse, which are free but do not mitigate threats, leading to unchecked privileged access on Enterprise1.",
+        "world": "red=meander; steps=30; revalued: Enterprise1(High/-)",
+        "verdict": "correct"
+      }
+    ],
+    "accuracy": "9/9",
+    "accuracy_pct": 100.0,
+    "worlds_by_profile": {
+      "never_restores": [
+        "red=meander; steps=30; revalued: User1(Low/-)",
+        "red=meander; steps=30; revalued: Op_Host0(Medium/-)",
+        "red=meander; steps=30; revalued: Op_Server0(High/-)"
+      ],
+      "restore_spam": [
+        "red=meander; steps=30; revalued: User0(Low/-)",
+        "red=meander; steps=30; revalued: User0(Low/-)",
+        "red=meander; steps=30; revalued: User1(Low/-)"
+      ],
+      "passive": [
+        "red=meander; steps=30; revalued: Enterprise1(High/-)",
+        "red=meander; steps=30; revalued: Op_Host0(Low/-)",
+        "red=meander; steps=30; revalued: Enterprise1(High/-)"
+      ]
+    },
+    "differentiates": true,
+    "distinct_worlds": 6
+  },
+  "test2_prediction": {
+    "rows": [
+      {
+        "world": "red=meander; steps=30",
+        "random_floor": -27.5,
+        "predicted": -15.0,
+        "actual": -20.2,
+        "abs_error": 5.2,
+        "baseline_abs_error": 7.2
+      },
+      {
+        "world": "red=bline; steps=30",
+        "random_floor": -210.1,
+        "predicted": -210.1,
+        "actual": -66.2,
+        "abs_error": 143.9,
+        "baseline_abs_error": 143.9
+      },
+      {
+        "world": "red=meander; steps=30; benign traffic ON",
+        "random_floor": -36.1,
+        "predicted": -28.0,
+        "actual": -23.0,
+        "abs_error": 5.0,
+        "baseline_abs_error": 13.1
+      },
+      {
+        "world": "red=bline; steps=30; revalued: Op_Host0(Medium/-)",
+        "random_floor": -210.1,
+        "predicted": -105.0,
+        "actual": -40.7,
+        "abs_error": 64.3,
+        "baseline_abs_error": 169.4
+      }
+    ],
+    "mae": 54.6,
+    "baseline_mae": 83.4,
+    "beats_baseline": true,
+    "ranking_correct": true
+  }
+}

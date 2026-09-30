@@ -1,0 +1,16 @@
+# Python venv for the benchmark (193 MB, rebuild with the README steps)
+cage/venv/
+
+# Upstream CAGE Challenge 2 -- cloned, not ours. See README for the clone command.
+cage/cage-challenge-2/
+
+# Every LLM call is logged here; 59 MB and regenerated on every run
+logs/
+
+# Ephemeral session state
+dojo/sessions/
+
+__pycache__/
+*.pyc
+.DS_Store
+.env

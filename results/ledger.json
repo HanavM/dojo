@@ -1,0 +1,187 @@
+{
+  "entries": [
+    {
+      "ts": 1790794372.6983318,
+      "route": "/learn/start",
+      "amount_usd": 0.05,
+      "receipt": "mock_e1a0d60404d74bfa",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790795791.667999,
+      "route": "/learn/start",
+      "amount_usd": 0.05,
+      "receipt": "mock_09a84c574b464719",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790795852.626633,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_28b5f11d256a4c0b",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790795916.975067,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_fd6e3632989b45a8",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790795976.349077,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_a66069443bc44231",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790796043.570216,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_c1885791bd6449bc",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790796232.489163,
+      "route": "/learn/start",
+      "amount_usd": 0.05,
+      "receipt": "mock_785c60c89f794ead",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790796278.798358,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_7820c0a7aa8b42af",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790796322.014821,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_1473a3b6cc3d4e10",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790796375.800349,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_32eee7c356274a07",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790796421.7543879,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_88366975a24a4fa4",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790797654.912905,
+      "route": "/learn/start",
+      "amount_usd": 0.05,
+      "receipt": "mock_dd2ac602af104368",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790797696.8256462,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_aa4988265f5f4995",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790797735.3161721,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_4b25dfa36cd54a84",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790797785.224138,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_ac12a44b25eb44e9",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790797830.881597,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_ebc83d296fe0468f",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790797928.6687932,
+      "route": "/learn/start",
+      "amount_usd": 0.05,
+      "receipt": "mock_ff70232e4a5d43d9",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790797970.257499,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_84d84de327924ef4",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798010.3741262,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_3e4bbcb5bc5d4570",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798045.978412,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_1098aa76f78c410a",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798084.995083,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_6f8c56c04b7c44a5",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798089.445776,
+      "route": "/learn/start",
+      "amount_usd": 0.05,
+      "receipt": "mock_f4e7c5926a834987",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798127.4678872,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_38db603fa18342a5",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798760.445673,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_348bede3f2b941bd",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798802.459977,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_0465b757e6ca4141",
+      "mode": "mock"
+    },
+    {
+      "ts": 1790798840.452688,
+      "route": "/gauntlet/next",
+      "amount_usd": 0.05,
+      "receipt": "mock_a895a56888e84426",
+      "mode": "mock"
+    }
+  ],
+  "total_usd": 1.3
+}

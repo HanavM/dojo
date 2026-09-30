@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://pay.sh/docs-assets/provider.schema.json
+# Dojo -- an on-demand teacher that agents buy.
+# The pay.sh gate sits in FRONT of the FastAPI teacher (127.0.0.1:8000):
+#   pay --sandbox gate api paywall.yml --bind 127.0.0.1:1402
+name: dojo-teacher
+subdomain: dojo-teacher
+title: 'Dojo — an on-demand teacher for agents'
+description: 'Buy a practice curriculum with fading scaffolds and per-attempt critique.'
+category: ai_ml
+version: v1
+
+routing:
+  type: proxy
+  url: http://127.0.0.1:8001/
+
+operator:
+  currencies:
+    usd: ['USDC']
+  network: localnet        # sandbox forces localnet; `mainnet` for real funds
+  fee_payer: true
+
+endpoints:
+  - method: GET
+    path: 'health'
+    description: 'Liveness check (free).'
+
+  - method: GET
+    path: 'pricing'
+    description: 'What a learning session costs (free).'
+
+  # The one paid call: opening a learning session.
+  - method: POST
+    path: 'learn/start'
+    description: 'Open a learning session: returns a session id, the first practice config and a scaffold level.'
+    metering:
+      dimensions:
+        - direction: usage
+          unit: requests
+          scale: 1
+          tiers:
+            - price_usd: 0.05
+
+  # Free within a session the agent already paid to open.
+  - method: POST
+    path: 'learn/hint'
+    description: 'Per-step coaching while the scaffold level is high (free within a paid session).'
+
+  - method: POST
+    path: 'learn/submit'
+    description: 'Submit an attempt, get critique lessons and the next practice config (free within a paid session).'

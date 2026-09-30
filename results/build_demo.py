@@ -1,0 +1,178 @@
+"""Build results/demo.html -- the stripped-down walkthrough.
+
+Per round: what the world model changed, the notes it wrote that round, and the
+final damage for the note-taking agent vs the memoryless control.
+Then one chart across all rounds.
+"""
+import json
+import os
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC = os.path.join(HERE, "gauntlet_llm.json")
+OUT = os.path.join(HERE, "demo.html")
+
+PAGE = r"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dojo — the gauntlet</title>
+<style>
+  :root{
+    color-scheme:light;
+    --bg:#f4f4f1; --card:#fcfcfb; --rule:#dedcd4;
+    --ink:#0b0b0b; --ink2:#52514e; --ink3:#78766f;
+    --learner:#2a78d6; --control:#eb6834; --world:#1baf7a;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --bg:#111110; --card:#1a1a19; --rule:#33332f;
+      --ink:#fff; --ink2:#c3c2b7; --ink3:#94938a;
+      --learner:#3987e5; --control:#d95926; --world:#199e70;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.55 ui-sans-serif,-apple-system,"SF Pro Text",Inter,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto;padding:44px 20px 72px}
+  h1{font-size:26px;letter-spacing:-.02em;margin:0 0 30px;font-weight:660}
+  .round{background:var(--card);border:1px solid var(--rule);border-radius:12px;
+    padding:22px;margin-bottom:18px}
+  .rnum{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--ink3);font-weight:640;margin-bottom:14px}
+  .lbl{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--ink3);font-weight:640;margin:18px 0 7px}
+  .lbl:first-of-type{margin-top:0}
+  .chg{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:13px;
+    background:color-mix(in oklab,var(--world) 11%,transparent);
+    border-left:3px solid var(--world);padding:9px 12px;border-radius:0 6px 6px 0}
+  ul.notes{margin:0;padding-left:19px;color:var(--ink2);font-size:13.5px}
+  ul.notes li{margin-bottom:5px}
+  .none{color:var(--ink3);font-style:italic;font-size:13.5px}
+  .bars{margin-top:4px}
+  .bar{display:grid;grid-template-columns:96px 1fr 64px;align-items:center;
+    gap:10px;margin-bottom:7px}
+  .bar .who{font-size:12.5px;color:var(--ink2);display:flex;align-items:center;gap:6px}
+  .dot{width:9px;height:9px;border-radius:3px;flex:none}
+  .track{display:block;background:color-mix(in oklab,var(--ink) 7%,transparent);
+    border-radius:4px;height:19px;overflow:hidden}
+  .fill{display:block;height:100%;border-radius:4px;min-width:2px}
+  .val{text-align:right;font-size:13px;font-weight:650;
+    font-variant-numeric:tabular-nums}
+  .verdict{margin-top:11px;font-size:13.5px;color:var(--ink2)}
+  .verdict b{color:var(--ink)}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .chart{background:var(--card);border:1px solid var(--rule);border-radius:12px;
+    padding:22px;margin-top:30px}
+  .legend{display:flex;gap:18px;margin:0 0 14px;padding:0;list-style:none;
+    font-size:13px;color:var(--ink2)}
+  .legend li{display:flex;align-items:center;gap:7px}
+  .ax{fill:var(--ink3);font-size:11.5px;font-variant-numeric:tabular-nums}
+  .cap{color:var(--ink3);font-size:12.5px;margin-top:12px}
+</style>
+</head>
+<body><div class="wrap">
+<h1>The gauntlet, round by round</h1>
+<div id="rounds"></div>
+<div class="chart">
+  <ul class="legend">
+    <li><span class="dot" style="background:var(--learner)"></span>keeps notes</li>
+    <li><span class="dot" style="background:var(--control)"></span>no notes, no memory</li>
+  </ul>
+  <div id="chart"></div>
+  <p class="cap" id="cap"></p>
+</div>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const R = D.rounds || [];
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+/* ---- per round ---- */
+const worst = Math.max(...R.flatMap(r => [Math.abs(r.learner_mean||0), Math.abs(r.control_mean||0)]), 1);
+document.getElementById('rounds').innerHTML = R.map(r => {
+  const L = r.learner_mean || 0, C = r.control_mean || 0;
+  const gap = L - C;
+  const notes = r.round_lessons && r.round_lessons.length
+      ? `<ul class="notes">${r.round_lessons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`
+      : (r.diagnosis ? `<ul class="notes"><li>${esc(r.diagnosis)}</li></ul>`
+                     : `<p class="none">no notes written this round</p>`);
+  const bar = (who, v, color) => `
+    <div class="bar">
+      <span class="who"><span class="dot" style="background:${color}"></span>${who}</span>
+      <span class="track"><span class="fill" style="width:${Math.min(100, Math.abs(v)/worst*100)}%;background:${color}"></span></span>
+      <span class="val">${v.toFixed(1)}</span>
+    </div>`;
+  const win = gap > 0;
+  return `<div class="round">
+    <div class="rnum">Round ${r.iteration}</div>
+    <div class="lbl">What the world model changed</div>
+    <div class="chg">${esc(r.config_desc || '(unchanged)')}</div>
+    <div class="lbl">Notes written this round</div>
+    ${notes}
+    <div class="lbl">Final damage</div>
+    <div class="bars">
+      ${bar('keeps notes', L, 'var(--learner)')}
+      ${bar('no notes', C, 'var(--control)')}
+    </div>
+    <p class="verdict">The note-taking agent took
+      <b>${Math.abs(gap).toFixed(1)} ${win ? 'less' : 'more'}</b> damage.
+      ${r.is_noise_calibration ? ' (Both agents start with empty notes here — this is the noise floor.)' : ''}</p>
+  </div>`;
+}).join('');
+
+/* ---- one chart across rounds ---- */
+(function(){
+  if(!R.length) return;
+  const W=700,H=300,L=52,Rg=20,T=18,B=52;
+  const vals = R.flatMap(r=>[r.learner_mean||0, r.control_mean||0]);
+  const lo = Math.min(...vals, 0), pad=(0-lo)*0.12||1, y0=lo-pad;
+  const x = i => L + (R.length<2 ? (W-L-Rg)/2 : i/(R.length-1)*(W-L-Rg));
+  const y = v => (H-B) - (v-y0)/(0-y0)*(H-B-T);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Damage per round, notes vs no notes">`;
+  const step = Math.ceil(Math.abs(y0)/4/5)*5 || 5;
+  for(let v=0; v>=y0; v-=step)
+    s+=`<line x1="${L}" y1="${y(v)}" x2="${W-Rg}" y2="${y(v)}" stroke="var(--rule)"${v===0?' stroke-width="1.5"':' opacity=".6"'}/>
+        <text class="ax" x="${L-9}" y="${y(v)+4}" text-anchor="end">${v}</text>`;
+  R.forEach((r,i)=>s+=`<text class="ax" x="${x(i)}" y="${H-B+20}" text-anchor="middle">Round ${r.iteration}</text>`);
+  s+=`<text class="ax" x="${(L+W-Rg)/2}" y="${H-B+42}" text-anchor="middle">damage taken — 0 is perfect, lower is worse</text>`;
+  [['learner_mean','var(--learner)'],['control_mean','var(--control)']].forEach(([k,c])=>{
+    const pts = R.map((r,i)=>[x(i), y(r[k]||0)]);
+    s+=`<path d="${pts.map((p,i)=>`${i?'L':'M'} ${p[0]} ${p[1]}`).join(' ')}" fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/>`;
+    pts.forEach((p,i)=>s+=`<circle cx="${p[0]}" cy="${p[1]}" r="5" fill="${c}" stroke="var(--card)" stroke-width="2"><title>Round ${R[i].iteration}: ${(R[i][k]||0).toFixed(1)}</title></circle>`);
+  });
+  s+=`</svg>`;
+  document.getElementById('chart').innerHTML = s;
+  document.getElementById('cap').textContent =
+    `Both agents play the same world on the same ${(R[0].seeds||[]).length || 3} seeds each round. `
+    + `Round 1 is the calibration round: both start with empty notes, so any gap there is noise.`;
+})();
+</script>
+</body></html>
+"""
+
+
+def main():
+    src = sys.argv[1] if len(sys.argv) > 1 else SRC
+    with open(src) as f:
+        data = json.load(f)
+    slim = {"rounds": [{k: r.get(k) for k in
+                        ("iteration", "config_desc", "diagnosis", "round_lessons",
+                         "learner_mean", "control_mean", "seeds",
+                         "is_noise_calibration")}
+                       for r in data.get("rounds", [])]}
+    blob = json.dumps(slim).replace("</", "<\\/")
+    html = PAGE.replace("__DATA__", blob)
+    assert "__DATA__" not in html
+    with open(OUT, "w") as f:
+        f.write(html)
+    print(f"wrote {OUT} ({os.path.getsize(OUT)/1024:.0f} KB) from {os.path.basename(src)}")
+
+
+if __name__ == "__main__":
+    main()

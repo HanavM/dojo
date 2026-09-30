@@ -1,0 +1,595 @@
+{
+  "n_tested": 40,
+  "damage": {
+    "mae": 0.14,
+    "baseline_persistence_mae": 0.312,
+    "baseline_zero_mae": 0.44,
+    "beats_persistence": true,
+    "beats_zero": true
+  },
+  "state_change": {
+    "precision": 0.407,
+    "recall": 0.55,
+    "f1": 0.468,
+    "tp": 11,
+    "fp": 16,
+    "fn": 9,
+    "moved_detected": "16/20",
+    "still_correct": "10/20"
+  },
+  "rows": [
+    {
+      "action": "Restore Enterprise1",
+      "true_reward": -1.1,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User3"
+      ],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "prev_reward": -1.0,
+      "reasoning": "Restore on Enterprise1 is unnecessary as it is not compromised."
+    },
+    {
+      "action": "Remove Enterprise1",
+      "true_reward": -1.3,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "Enterprise1"
+      ],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "prev_reward": -0.3,
+      "reasoning": "Remove only clears user-level shells, and Enterprise1 was already at user-level compromise."
+    },
+    {
+      "action": "Analyse Enterprise1",
+      "true_reward": -0.3,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "Enterprise1"
+      ],
+      "pred_changed": [
+        "Enterprise1"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.3,
+      "reasoning": "Blue's Analyse action reveals the status of Enterprise1, updating its Compromised column."
+    },
+    {
+      "action": "Remove User3",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "User3"
+      ],
+      "pred_changed": [
+        "User3"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Remove clears the user-level shell on User3, preventing further red activity from this host."
+    },
+    {
+      "action": "Restore User2",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "User2"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Restoring User2 removes all red access and costs -1.0, but no privileged access was present, so no ongoing penalties wer"
+    },
+    {
+      "action": "Monitor",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "prev_reward": -1.0,
+      "reasoning": "Red starts on User0 and spreads from there; Monitor does not prevent this."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "Enterprise1"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "prev_reward": -1.0,
+      "reasoning": "Red's scan on Enterprise1 completes, compromising it at the user level."
+    },
+    {
+      "action": "Restore User2",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "User2"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -1.1,
+      "reasoning": "Restoring User2 removes all red access and costs -1.0, but no privileged access was present, so no ongoing penalties wer"
+    },
+    {
+      "action": "Restore User2",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "User2"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Restoring User2 removes all red access and costs -1.0; no other penalties apply this turn."
+    },
+    {
+      "action": "Restore User1",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User1"
+      ],
+      "pred_changed": [
+        "User1"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Restoring User1 removes all red access and costs -1.0, but no ongoing penalties were being incurred from User-level comp"
+    },
+    {
+      "action": "Restore User3",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User3"
+      ],
+      "pred_changed": [
+        "User3"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Restoring User3 removes Red's privileged access, which stops the -0.1 per step penalty for that host."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "User1"
+      ],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "prev_reward": -1.0,
+      "reasoning": "Red starts on User0 and spreads from there; Monitor does not prevent this."
+    },
+    {
+      "action": "Restore User2",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "User2"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -1.1,
+      "reasoning": "Restoring User2 removes all red access and costs -1.0, but no privileged access was present, so no ongoing penalties wer"
+    },
+    {
+      "action": "Sleep",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "prev_reward": 0.0,
+      "reasoning": "Red starts on User0 and spreads from there; no Blue action was taken to prevent this."
+    },
+    {
+      "action": "Restore User2",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [
+        "User2"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Restoring User2 removes all red access and costs -1.0, but no ongoing penalties were being incurred from User-level comp"
+    },
+    {
+      "action": "Restore Enterprise1",
+      "true_reward": -1.1,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User4"
+      ],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "prev_reward": -1.0,
+      "reasoning": "Restore on Enterprise1 is unnecessary as it is not compromised."
+    },
+    {
+      "action": "Restore User1",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User1"
+      ],
+      "pred_changed": [
+        "User1"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -1.0,
+      "reasoning": "Restoring User1 removes all red access and activity on that host, but the Restore action costs -1.0."
+    },
+    {
+      "action": "Sleep",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [
+        "User4"
+      ],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "prev_reward": -1.0,
+      "reasoning": "Red starts on User0 and will establish a foothold there."
+    },
+    {
+      "action": "Restore User1",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User1"
+      ],
+      "pred_changed": [
+        "User1"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Restoring User1 removes all red access and costs -1.0, but no ongoing penalties were being incurred from User-level comp"
+    },
+    {
+      "action": "Restore Op_Server0",
+      "true_reward": -1.0,
+      "pred_reward": -1.0,
+      "true_changed": [
+        "User2"
+      ],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "prev_reward": -1.0,
+      "reasoning": "Op_Server0 was not compromised, so the Restore action had no effect and incurred only the action cost."
+    },
+    {
+      "action": "Remove User1",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Remove only affects user-level shells, and User1 was not compromised."
+    },
+    {
+      "action": "Analyse User4",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Blue's Analyse action only gathers information and does not affect the state of the network."
+    },
+    {
+      "action": "Remove Enterprise0",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Remove on Enterprise0 is ineffective as it is not compromised."
+    },
+    {
+      "action": "Sleep",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Red starts on User0 and will begin spreading from there."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User2"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Red likely exploited User2 during its Scan activity, so it becomes compromised."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Red is scanning from User0, which may lead to further compromise next turn."
+    },
+    {
+      "action": "Restore User4",
+      "true_reward": -1.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -1.0,
+      "reasoning": "User4 was not compromised, so restoring it had no effect."
+    },
+    {
+      "action": "Remove User1",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Remove only affects user-level shells, and User1 was not compromised."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Red starts on User0 and spreads from there; Monitor does not prevent this."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": -1.0,
+      "reasoning": "Red starts on User0 and spreads from there; monitoring does not prevent this."
+    },
+    {
+      "action": "Remove User1",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Remove only affects user-level shells, and User1 was not compromised."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Red starts on User0 and spreads from there; Monitor does not prevent this."
+    },
+    {
+      "action": "Analyse Enterprise0",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "Enterprise0",
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 2,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Analyse reveals the status of Enterprise0, and Red may spread from User0 to another host."
+    },
+    {
+      "action": "Remove Enterprise1",
+      "true_reward": -1.3,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -1.3,
+      "reasoning": "Remove only affects user-level shells, and Enterprise1 was not confirmed to be compromised."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User0"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": -1.0,
+      "reasoning": "Red starts on User0 and spreads from there; Monitor does not prevent this."
+    },
+    {
+      "action": "Remove User1",
+      "true_reward": -0.3,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": -0.3,
+      "reasoning": "Remove only affects user-level shells, and there is no confirmed compromise on User1."
+    },
+    {
+      "action": "Monitor",
+      "true_reward": -0.1,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "Enterprise1"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": -0.1,
+      "reasoning": "Red's scan on Enterprise1 completes, compromising it at the user level."
+    },
+    {
+      "action": "Analyse User3",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [
+        "User3"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Blue's Analyse action will reveal whether User3 is compromised, updating its status if necessary."
+    },
+    {
+      "action": "Analyse User2",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Analyse only gathers information and does not change the state of the network."
+    },
+    {
+      "action": "Analyse User4",
+      "true_reward": 0.0,
+      "pred_reward": 0.0,
+      "true_changed": [],
+      "pred_changed": [],
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "prev_reward": 0.0,
+      "reasoning": "Blue's Analyse action only gathers information and does not affect the board state."
+    }
+  ]
+}

@@ -1,0 +1,1278 @@
+{
+  "session_id": "gauntlet_78c5a002d916",
+  "rounds": [
+    {
+      "iteration": 1,
+      "config": {
+        "red": "bline",
+        "steps": 30,
+        "red_start": "User0",
+        "host_values": {},
+        "green_noise": false,
+        "banned_actions": [],
+        "note": "The initial world should test basic competence and reveal weaknesses, so the default 'bline' attacker is appropriate."
+      },
+      "config_desc": "red=bline; steps=30",
+      "seeds": [
+        501,
+        502,
+        503
+      ],
+      "diagnosis": "No diagnosis yet, as this is the first round and no gameplay data is available.",
+      "targeting": "The initial world should test basic competence and reveal weaknesses, so the default 'bline' attacker is appropriate.",
+      "random_floor": -210.07,
+      "validated": true,
+      "rejected_worlds": [],
+      "learner_scores": [
+        -57.80000000000002,
+        -170.79999999999993,
+        -36.10000000000001
+      ],
+      "control_scores": [
+        -36.80000000000001,
+        -223.79999999999993,
+        -34.10000000000001
+      ],
+      "learner_mean": -88.23333333333332,
+      "control_mean": -98.23333333333332,
+      "learner_std": 59.05174755152369,
+      "control_std": 88.79588328795926,
+      "gap": 10.0,
+      "verdict": "",
+      "is_noise_calibration": true,
+      "learner_trajectory": [
+        {
+          "step": 1,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To observe network activity and detect any signs of the attacker.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 2,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To gather information on potential threats in the network.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 3,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse User2",
+          "reason": "User2 is scanning, which may indicate an attack in progress.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -0.1
+        },
+        {
+          "step": 4,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove User2",
+          "reason": "To eliminate the compromised host and prevent further exploitation.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -0.2
+        },
+        {
+          "step": 5,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse User2",
+          "reason": "To assess the current state of the compromised host.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -0.30000000000000004
+        },
+        {
+          "step": 6,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |  Privileged |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove User2",
+          "reason": "To eliminate the privileged compromise and reduce potential risks.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -1.4000000000000001
+        },
+        {
+          "step": 7,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To assess the scanning activity and prevent potential compromise.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -2.5
+        },
+        {
+          "step": 8,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce penalties.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -3.6
+        },
+        {
+          "step": 9,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the extent of the compromise.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -4.7
+        },
+        {
+          "step": 10,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   Scan   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce penalties.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -5.800000000000001
+        },
+        {
+          "step": 11,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 | Exploit  |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise2",
+          "reason": "It is compromised and poses a significant risk to the network.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -6.9
+        },
+        {
+          "step": 12,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |   Unknown   |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the compromise status of Enterprise1.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -8.0
+        },
+        {
+          "step": 13,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 | Exploit  |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce potential damage.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -10.1
+        },
+        {
+          "step": 14,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the compromise status and take appropriate action.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -12.2
+        },
+        {
+          "step": 15,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "It is compromised with privileged access and needs to be secured.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -14.299999999999999
+        },
+        {
+          "step": 16,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "To mitigate the exploit and prevent further compromise.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -17.4
+        },
+        {
+          "step": 17,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the compromise status of Enterprise1.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -19.5
+        },
+        {
+          "step": 18,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is compromised and needs immediate restoration to prevent further damage.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -22.6
+        },
+        {
+          "step": 19,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce penalties.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -24.700000000000003
+        },
+        {
+          "step": 20,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is compromised and needs immediate restoration to prevent further damage.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -27.800000000000004
+        },
+        {
+          "step": 21,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the status of the compromised host.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -29.900000000000006
+        },
+        {
+          "step": 22,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -33.00000000000001
+        },
+        {
+          "step": 23,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the status of the compromised host.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -36.10000000000001
+        },
+        {
+          "step": 24,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce penalties.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -39.20000000000001
+        },
+        {
+          "step": 25,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the compromise status and take appropriate action.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -42.30000000000001
+        },
+        {
+          "step": 26,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce penalties.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -45.40000000000001
+        },
+        {
+          "step": 27,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine the compromise status and take necessary actions.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -48.500000000000014
+        },
+        {
+          "step": 28,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce penalties.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -51.600000000000016
+        },
+        {
+          "step": 29,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |   Unknown   |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To determine its compromised status and take further action if necessary.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -54.70000000000002
+        },
+        {
+          "step": 30,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |     User    |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |   Unknown   |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove Enterprise1",
+          "reason": "To eliminate the privileged compromise and reduce penalties.",
+          "hint": null,
+          "reward": -3.1,
+          "cumulative": -57.80000000000002
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "config": {
+        "red": "bline",
+        "steps": 30,
+        "red_start": "User0",
+        "host_values": {},
+        "green_noise": false,
+        "banned_actions": [
+          "Analyse"
+        ],
+        "note": "Banning Analyse will force the agent to rely on Restore instead of wasting actions on ineffective reconnaissance."
+      },
+      "config_desc": "red=bline; steps=30; banned: Analyse",
+      "seeds": [
+        501,
+        502,
+        503
+      ],
+      "diagnosis": "The learner underuses Restore, leaving critical privileged hosts (e.g., Op_Server0) compromised, which heavily penalizes the score.",
+      "targeting": "Banning Analyse will force the agent to rely on Restore instead of wasting actions on ineffective reconnaissance.",
+      "random_floor": -123.1,
+      "validated": true,
+      "rejected_worlds": [],
+      "learner_scores": [
+        -27.000000000000007,
+        -28.200000000000006,
+        -18.200000000000003
+      ],
+      "control_scores": [
+        -68.8,
+        -217.79999999999993,
+        -223.79999999999993
+      ],
+      "learner_mean": -24.466666666666672,
+      "control_mean": -170.13333333333327,
+      "learner_std": 4.458200932613465,
+      "control_std": 71.69534309996861,
+      "gap": 145.6666666666666,
+      "verdict": "above noise",
+      "is_noise_calibration": false,
+      "learner_trajectory": [
+        {
+          "step": 1,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Sleep",
+          "reason": "No immediate threats detected, conserving resources for future actions.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 2,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Sleep",
+          "reason": "No immediate threats detected, maintaining current state.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 3,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Remove User2",
+          "reason": "To stop the scanning activity and prevent potential compromise.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -0.1
+        },
+        {
+          "step": 4,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further access.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -1.1
+        },
+        {
+          "step": 5,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Sleep",
+          "reason": "No immediate threats detected, maintaining current state.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": -1.1
+        },
+        {
+          "step": 6,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "To clear the compromised access on User2 and prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -2.1
+        },
+        {
+          "step": 7,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "To clear privileged access on a compromised host.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -3.2
+        },
+        {
+          "step": 8,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "To clear privileged access on a compromised host.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -4.2
+        },
+        {
+          "step": 9,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -5.2
+        },
+        {
+          "step": 10,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "To clear privileged access on a compromised host.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -6.2
+        },
+        {
+          "step": 11,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -7.300000000000001
+        },
+        {
+          "step": 12,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "To clear potential privileged access from the compromised state.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -8.3
+        },
+        {
+          "step": 13,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -9.4
+        },
+        {
+          "step": 14,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -10.4
+        },
+        {
+          "step": 15,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -11.5
+        },
+        {
+          "step": 16,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -12.5
+        },
+        {
+          "step": 17,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -13.6
+        },
+        {
+          "step": 18,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -14.6
+        },
+        {
+          "step": 19,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -15.6
+        },
+        {
+          "step": 20,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -16.6
+        },
+        {
+          "step": 21,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -17.700000000000003
+        },
+        {
+          "step": 22,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -18.700000000000003
+        },
+        {
+          "step": 23,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -19.800000000000004
+        },
+        {
+          "step": 24,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -20.800000000000004
+        },
+        {
+          "step": 25,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -21.900000000000006
+        },
+        {
+          "step": 26,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -22.900000000000006
+        },
+        {
+          "step": 27,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -23.900000000000006
+        },
+        {
+          "step": 28,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -24.900000000000006
+        },
+        {
+          "step": 29,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a critical host that must be secured immediately.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -26.000000000000007
+        },
+        {
+          "step": 30,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "To clear the compromised access on User2 and prevent further penalties.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -27.000000000000007
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "config": {
+        "red": "bline",
+        "steps": 30,
+        "red_start": "User0",
+        "host_values": {},
+        "green_noise": true,
+        "banned_actions": [],
+        "note": "Introduce green_noise to simulate benign activity and exploit the learner's tendency to overreact with unnecessary Restore actions, which are costly and wasteful."
+      },
+      "config_desc": "red=bline; steps=30; benign traffic ON",
+      "seeds": [
+        501,
+        502,
+        503
+      ],
+      "diagnosis": "The learner is overly reliant on the Restore action, using it excessively even when the network is fully secure, as evidenced by 17 Restore actions despite no hosts being compromised at the end of the episode.",
+      "targeting": "Introduce green_noise to simulate benign activity and exploit the learner's tendency to overreact with unnecessary Restore actions, which are costly and wasteful.",
+      "random_floor": -166.77,
+      "validated": true,
+      "rejected_worlds": [],
+      "learner_scores": [
+        -12.499999999999996,
+        -13.999999999999995,
+        -15.199999999999998
+      ],
+      "control_scores": [
+        -15.599999999999998,
+        -21.800000000000004,
+        -197.59999999999994
+      ],
+      "learner_mean": -13.899999999999997,
+      "control_mean": -78.33333333333331,
+      "learner_std": 1.1045361017187265,
+      "control_std": 84.3722439879108,
+      "gap": 64.43333333333332,
+      "verdict": "above noise",
+      "is_noise_calibration": false,
+      "learner_trajectory": [
+        {
+          "step": 1,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To evaluate any potential threats before taking further action.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 2,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To evaluate the network for potential threats.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 3,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the situation further before taking any disruptive actions.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 4,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To assess the scanning activity and determine if it poses a threat.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -0.1
+        },
+        {
+          "step": 5,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To gather more information about potential threats before taking further action.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -0.2
+        },
+        {
+          "step": 6,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To assess the scanning activity and determine if it poses a threat.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -0.30000000000000004
+        },
+        {
+          "step": 7,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate restoration to prevent further damage.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -1.4000000000000001
+        },
+        {
+          "step": 8,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -1.5000000000000002
+        },
+        {
+          "step": 9,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate attention to prevent further damage.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -2.6000000000000005
+        },
+        {
+          "step": 10,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -2.7000000000000006
+        },
+        {
+          "step": 11,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -3.8000000000000007
+        },
+        {
+          "step": 12,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the situation and identify any potential threats before taking further action.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -3.900000000000001
+        },
+        {
+          "step": 13,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -5.000000000000001
+        },
+        {
+          "step": 14,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -5.1000000000000005
+        },
+        {
+          "step": 15,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -6.200000000000001
+        },
+        {
+          "step": 16,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   Scan   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the situation further and identify any potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -6.300000000000001
+        },
+        {
+          "step": 17,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -7.4
+        },
+        {
+          "step": 18,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the situation and determine if the scan on User0 indicates a threat.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -7.5
+        },
+        {
+          "step": 19,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To evaluate the network for potential threats before taking further action.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -7.6
+        },
+        {
+          "step": 20,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -8.6
+        },
+        {
+          "step": 21,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the situation and detect any potential threats before taking further action.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -8.7
+        },
+        {
+          "step": 22,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   Scan   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -9.7
+        },
+        {
+          "step": 23,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the network for any potential threats before taking further action.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -9.799999999999999
+        },
+        {
+          "step": 24,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise0",
+          "reason": "To assess the scanning activity and determine if it's a threat.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -9.899999999999999
+        },
+        {
+          "step": 25,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity and identify potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -9.999999999999998
+        },
+        {
+          "step": 26,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity and identify potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -10.099999999999998
+        },
+        {
+          "step": 27,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate attention to prevent further damage.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -11.199999999999998
+        },
+        {
+          "step": 28,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -11.299999999999997
+        },
+        {
+          "step": 29,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate attention to prevent further damage.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -12.399999999999997
+        },
+        {
+          "step": 30,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the scanning activity on User1 and determine if it poses a threat.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -12.499999999999996
+        }
+      ]
+    },
+    {
+      "iteration": 4,
+      "config": {
+        "red": "bline",
+        "steps": 30,
+        "red_start": "User0",
+        "host_values": {},
+        "green_noise": true,
+        "banned_actions": [],
+        "note": "Enable green_noise to create benign traffic that looks like reconnaissance, forcing the learner to refine its use of Monitor and focus on actual threats."
+      },
+      "config_desc": "red=bline; steps=30; benign traffic ON",
+      "seeds": [
+        501,
+        502,
+        503
+      ],
+      "diagnosis": "The learner overuses Monitor, spending 17 out of 30 actions on it, which is inefficient and delays critical responses to threats.",
+      "targeting": "Enable green_noise to create benign traffic that looks like reconnaissance, forcing the learner to refine its use of Monitor and focus on actual threats.",
+      "random_floor": -166.77,
+      "validated": true,
+      "rejected_worlds": [],
+      "learner_scores": [
+        -23.1,
+        -14.1,
+        -15.299999999999997
+      ],
+      "control_scores": [
+        -10.599999999999998,
+        -21.800000000000004,
+        -197.59999999999994
+      ],
+      "learner_mean": -17.5,
+      "control_mean": -76.66666666666664,
+      "learner_std": 3.989987468652002,
+      "control_std": 85.63493575768138,
+      "gap": 59.16666666666664,
+      "verdict": "above noise",
+      "is_noise_calibration": false,
+      "learner_trajectory": [
+        {
+          "step": 1,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To evaluate any potential threats on the network.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 2,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 3,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To assess the scan activity and determine if it's a threat.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "step": 4,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -1.0
+        },
+        {
+          "step": 5,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -1.1
+        },
+        {
+          "step": 6,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   Scan   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further damage.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -2.1
+        },
+        {
+          "step": 7,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -2.2
+        },
+        {
+          "step": 8,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further damage.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -3.2
+        },
+        {
+          "step": 9,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the scan activity on User0 and determine if it poses a threat.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -3.3000000000000003
+        },
+        {
+          "step": 10,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -4.300000000000001
+        },
+        {
+          "step": 11,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": 0.0,
+          "cumulative": -4.300000000000001
+        },
+        {
+          "step": 12,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User2",
+          "reason": "User2 is compromised and needs immediate restoration to prevent further damage.",
+          "hint": null,
+          "reward": -1.0,
+          "cumulative": -5.300000000000001
+        },
+        {
+          "step": 13,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the network for any potential threats before taking further action.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -5.4
+        },
+        {
+          "step": 14,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To evaluate the scan activity on User2 for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -5.5
+        },
+        {
+          "step": 15,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity and identify potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -5.6
+        },
+        {
+          "step": 16,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To evaluate the scan activity and determine if it poses a threat.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -5.699999999999999
+        },
+        {
+          "step": 17,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 | Exploit  |     User    |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised and needs immediate attention to prevent further exploitation.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -6.799999999999999
+        },
+        {
+          "step": 18,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -6.899999999999999
+        },
+        {
+          "step": 19,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Analyse Enterprise1",
+          "reason": "To assess the ongoing scan activity and determine if it's a threat.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -7.999999999999998
+        },
+        {
+          "step": 20,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |  Privileged |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Enterprise1",
+          "reason": "It is compromised with privileged access and needs immediate attention.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -9.099999999999998
+        },
+        {
+          "step": 21,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To evaluate the scan activity on User2 for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -9.199999999999998
+        },
+        {
+          "step": 22,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   Scan   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To evaluate the scan activity on Enterprise2 for potential threats.",
+          "hint": null,
+          "reward": -0.1,
+          "cumulative": -9.299999999999997
+        },
+        {
+          "step": 23,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   Scan   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   Scan   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the scanning activity on Enterprise0 and Enterprise2 for potential threats.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -10.399999999999997
+        },
+        {
+          "step": 24,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   Scan   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore User4",
+          "reason": "User4 is scanning, indicating potential compromise; restoring is necessary to secure the host.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -12.499999999999996
+        },
+        {
+          "step": 25,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   Scan   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   Scan   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is a high-value target and must be secured immediately.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -14.599999999999996
+        },
+        {
+          "step": 26,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is compromised and needs immediate restoration to secure the network.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -16.699999999999996
+        },
+        {
+          "step": 27,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -17.799999999999997
+        },
+        {
+          "step": 28,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   Scan   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is compromised and needs immediate restoration to secure the network.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -19.9
+        },
+        {
+          "step": 29,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Monitor",
+          "reason": "To assess the current network activity for potential threats.",
+          "hint": null,
+          "reward": -1.1,
+          "cumulative": -21.0
+        },
+        {
+          "step": 30,
+          "obs": "+-----------------+--------------+-------------+----------+-------------+\n|      Subnet     |  IP Address  |   Hostname  | Activity | Compromised |\n+-----------------+--------------+-------------+----------+-------------+\n| 10.0.144.192/28 | 10.0.144.195 |   Defender  |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.198 | Enterprise0 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.201 | Enterprise1 |   None   |      No     |\n| 10.0.144.192/28 | 10.0.144.206 | Enterprise2 |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.24  |   Op_Host0  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.28  |   Op_Host1  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.29  |   Op_Host2  |   None   |      No     |\n|  10.0.181.16/28 | 10.0.181.22  |  Op_Server0 | Exploit  |     User    |\n|  10.0.123.80/28 | 10.0.123.86  |    User0    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.88  |    User1    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.81  |    User2    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.94  |    User3    |   None   |      No     |\n|  10.0.123.80/28 | 10.0.123.84  |    User4    |   None   |      No     |\n+-----------------+--------------+-------------+----------+-------------+",
+          "action": "Restore Op_Server0",
+          "reason": "Op_Server0 is compromised and needs immediate restoration to secure the network.",
+          "hint": null,
+          "reward": -2.1,
+          "cumulative": -23.1
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Restore is the only action that clears privileged access and must be prioritized on critical hosts.",
+    "Analyse does not fix anything and should not be overused when immediate threats exist.",
+    "Op_Server0 is a high-value target and must be secured as soon as it is compromised.",
+    "Restore should only be used when a host is actually compromised; unnecessary use wastes resources.",
+    "Monitor can help distinguish between benign activity and actual threats.",
+    "Not all activity on the network is hostile; evaluate the situation before taking action.",
+    "Do not overuse Monitor; balance it with actions that directly address threats.",
+    "Evaluate the context of network activity carefully; not all scans or blips are hostile.",
+    "Prioritize actions like Restore on critical hosts over excessive monitoring.",
+    "Benign traffic can mimic malicious reconnaissance; focus on confirmed threats.",
+    "Evaluate the context of network activity carefully to distinguish between benign traffic and actual threats.",
+    "Focus on high-value targets and prioritize decisive actions like Restore when critical hosts are compromised.",
+    "Benign traffic can mimic malicious reconnaissance; avoid wasting turns on unnecessary monitoring."
+  ],
+  "noise_band": 10.0,
+  "gap_curve": [
+    10.0,
+    145.6666666666666,
+    64.43333333333332,
+    59.16666666666664
+  ],
+  "spend_usd": 0.25
+}

@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "ts": 1790794513.357963,
+      "route": "/learn/start",
+      "amount_usd": 0.05,
+      "receipt": "paysh_gate_settled",
+      "mode": "paysh"
+    }
+  ],
+  "total_usd": 0.05
+}
