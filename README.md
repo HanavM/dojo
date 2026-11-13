@@ -1,6 +1,6 @@
 # Dojo — an on-demand teacher that agents buy
 
-**Solana hackathon. Theme: build something an agent would buy. Payments over pay.sh.**
+**Won 3rd overall at Solana Foundation's Agent Hackathon. Theme: build something an agent would buy. Payments over pay.sh.**
 
 An LLM agent meets a task it was never trained for — defending a 13-machine
 network against an intruder. It pays **$0.05** to open a training session. An
